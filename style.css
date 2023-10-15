@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;  /* We don't want the body itself to scroll, but the inner container */
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    height: 100%;
+    padding-right: 15px; /* To avoid horizontal scrollbar */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header, #content, footer {
+    height: 100vh; /* Each section is the height of the viewport */
+}
+
+/* Example styling, can be customized */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#content {
+    background-color: #E0E0E0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
